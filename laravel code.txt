@@ -1,6 +1,10 @@
 Laravel
 php artisan serve
 Route:
+Route::get('/', function(){
+    return view('welcome');
+});
+
 Route::get('/hello',function(){
     return "My name is Aftab.";
 });
