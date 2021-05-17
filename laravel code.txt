@@ -1,0 +1,29 @@
+Laravel
+php artisan serve
+Route:
+Route::get('/hello',function(){
+    return "My name is Aftab.";
+});
+
+use App\Http\Controllers\homecontroller;
+Route::get('/', [homecontroller::class, 'home']);
+------------------------
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class homecontroller extends Controller
+{
+    function home(){
+      return view('welcome');
+    }
+    function about(){
+      return view('aboutpage');
+    }
+    function contact(){
+      return view('contactpage');
+    }
+}
+----------------------------------------
