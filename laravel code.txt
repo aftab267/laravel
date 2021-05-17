@@ -11,6 +11,11 @@ Route::get('/hello',function(){
 
 use App\Http\Controllers\homecontroller;
 Route::get('/', [homecontroller::class, 'home']);
+
+Route::get('/about',function(){
+    return  view('aboutpage');
+});
+
 ------------------------
 <?php
 
