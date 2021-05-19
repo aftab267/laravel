@@ -16,6 +16,8 @@ Route::get('/about',function(){
     return  view('aboutpage');
 });
 
+<a href="{{url('/about')}}">About</a><br>
+<a href="{{url('/contact')}}">Contact</a><br>
 ------------------------
 <?php
 
@@ -36,3 +38,16 @@ class homecontroller extends Controller
     }
 }
 ----------------------------------------
+Route::get('/name/{namevalue}', [democontroller::class, 'myname']);
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class democontroller extends Controller
+{
+   function myname($namevalue){
+    return $namevalue;
+   }
+}
