@@ -51,3 +51,9 @@ class democontroller extends Controller
     return $namevalue;
    }
 }
+--------------------------
+for Loop
+@for($i=0 ;$i<100; $i++)
+        <button>{{$i}}</button>
+
+@endfor
