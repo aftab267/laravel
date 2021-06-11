@@ -15,14 +15,15 @@ Route::get('/home', function(){
 Route::get('/hello',function(){
     return "My name is Aftab.";
 });
-php artisan make:controller sitecontroller --resource
-
-use App\Http\Controllers\homecontroller;
-Route::get('/', [homecontroller::class, 'home']);
 
 Route::get('/about',function(){
     return  view('aboutpage');
 });
+
+php artisan make:controller sitecontroller --resource
+
+use App\Http\Controllers\homecontroller;
+Route::get('/', [homecontroller::class, 'home']);
 
 <a href="{{url('/about')}}">About</a><br>
 <a href="{{url('/contact')}}">Contact</a><br>
