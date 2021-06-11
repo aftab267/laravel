@@ -15,6 +15,7 @@ Route::get('/home', function(){
 Route::get('/hello',function(){
     return "My name is Aftab.";
 });
+php artisan make:controller sitecontroller --resource
 
 use App\Http\Controllers\homecontroller;
 Route::get('/', [homecontroller::class, 'home']);
