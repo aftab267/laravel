@@ -1,4 +1,5 @@
 Laravel
+composer create-project laravel/laravel example-app
 php artisan serve
 Route::get('/hello',function(){
     return "<h1>Hello World</h1>";
