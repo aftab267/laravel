@@ -24,9 +24,6 @@ php artisan make:controller sitecontroller --resource
 use App\Http\Controllers\homecontroller;
 Route::get('/', [homecontroller::class, 'home']);
 
-<a href="{{url('/about')}}">About</a><br>
-<a href="{{url('/contact')}}">Contact</a><br>
-------------------------
 <?php
 
 namespace App\Http\Controllers;
@@ -46,6 +43,10 @@ class homecontroller extends Controller
     }
 }
 ----------------------------------------
+<a href="{{url('/about')}}">About</a><br>
+<a href="{{url('/contact')}}">Contact</a><br>
+------------------------
+
 Route::get('/name/{namevalue}', [democontroller::class, 'myname']);
 <?php
 
