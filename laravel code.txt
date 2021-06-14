@@ -48,6 +48,13 @@ class homecontroller extends Controller
 ------------------------
 
 Route::get('/name/{namevalue}', [democontroller::class, 'myname']);
+class sitecontroller extends Controller
+{
+   function myname($namevalue){
+       return $namevalue;
+   }
+}
+
 <?php
 
 namespace App\Http\Controllers;
