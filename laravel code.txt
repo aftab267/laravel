@@ -55,6 +55,7 @@ class sitecontroller extends Controller
    }
    }
 }
+------------------------------------
 Route::get('/{firstname}/{middlename}/{lastname}',[sitecontroller::class,'myname']);
 class sitecontroller extends Controller
 {
@@ -62,7 +63,7 @@ class sitecontroller extends Controller
     return "First name: ". $firstname."<br>Middle name: ". $middlename."<br>Last Name: ". $lastname;
    }
 }
-
+---------------------------------------------------------------
 <?php
 
 namespace App\Http\Controllers;
