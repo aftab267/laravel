@@ -77,6 +77,24 @@ class democontroller extends Controller
    }
 }
 --------------------------
+Route
+Route::get('/{firstname}/{midlename}/{lastname}',[sitecontroller::class,'myname']);
+
+controller
+class sitecontroller extends Controller
+{
+   function myname($firstname, $midlename,$lastname){
+  return view ('homepage',['firstkey'=>$firstname,'midlekey'=>$midlename,'lastkey'=>$lastname]);
+   
+   }
+}
+view
+<h1> First Name: {{$firstkey}}</h1>
+<h1> Middle Name: {{$midlekey}}</h1>
+<h1> Last Name: {{$lastkey}}</h1>
+
+
+----------------------------------
 for Loop
 @for($i=0 ;$i<100; $i++)
         <button>{{$i}}</button>
