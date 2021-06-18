@@ -95,6 +95,23 @@ view
 
 
 ----------------------------------
+Routing group
+Route::group(['prefix'=>'account'],function(){
+
+Route::get('/profile',function(){
+    return "Profile";
+});
+Route::get('/login',function(){
+    return "login";
+});
+Route::get('/logout',function(){
+    return "logout";
+});
+Route::get('/updateprofile',function(){
+    return "updateprofile";
+});
+
+------------------------------------
 for Loop
 @for($i=0 ;$i<100; $i++)
         <button>{{$i}}</button>
