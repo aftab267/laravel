@@ -47,7 +47,7 @@ class homecontroller extends Controller
 <a href="{{url('/about')}}">About</a><br>
 <a href="{{url('/contact')}}">Contact</a><br>
 ------------------------
-
+Date Pass
 Route::get('/name/{namevalue}', [democontroller::class, 'myname']);
 class sitecontroller extends Controller
 {
