@@ -122,7 +122,19 @@ class sitecontroller extends Controller
       return "I am Single action controller";
    }
 }
+=========================
+Resource Controller
+php artisan make:controller PhotoController --resource
+use App\Http\Controllers\PhotoController;
 
+Route::resource('photos', PhotoController::class);
+
+public function index()
+    {
+       return "<h1>I am Index </h1>";
+    }
+    
+    ========================================
 
 for Loop
 @for($i=0 ;$i<100; $i++)
