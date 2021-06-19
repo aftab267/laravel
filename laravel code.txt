@@ -113,6 +113,17 @@ Route::get('/updateprofile',function(){
 });
 
 ------------------------------------
+controller
+single action controller
+Route::get('/aftab',[sitecontroller::class,'__invoke']);
+class sitecontroller extends Controller
+{
+   public function __invoke(){
+      return "I am Single action controller";
+   }
+}
+
+
 for Loop
 @for($i=0 ;$i<100; $i++)
         <button>{{$i}}</button>
