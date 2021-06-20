@@ -135,6 +135,18 @@ public function index()
     }
     
     ========================================
+    View 
+    Data Pass
+    Route::get('/',[sitecontroller::class,'home']);
+    class sitecontroller extends Controller
+{
+   function home(){
+      $myname="My name is Aftab.";
+      return view ('homepage',['mynamekey'=>$myname]);
+   }
+   }
+   <h1>{{$mynamekey}}</h1>
+   -------------------------------------------
 
 for Loop
 @for($i=0 ;$i<100; $i++)
