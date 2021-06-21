@@ -197,4 +197,17 @@ class sitecontroller extends Controller
 <h2>Login Statue not found</h2>  
 @endif
 ------------------------
+Loop properties
+class sitecontroller extends Controller
+{
+   function home(){              
+             $data=array('Bangladesh','India','China','Srilanka');    
+             return view ('homepage',['datakey'=>$data]);
+   }
+   }
+@foreach($datakey as $countryname)
+<li>{{$loop->index}}</li>
+@break
+@endforeach
+-----------------------------------
 
