@@ -192,8 +192,7 @@ class sitecontroller extends Controller
 @if($loginstatuskey==True)
 <h2>You are loged In</h2>
 @elseif($loginstatuskey==False)
-<h2>You are Not loged In</h2>
-    
+<h2>You are Not loged In</h2>    
 @else
 <h2>Login Statue not found</h2>  
 @endif
