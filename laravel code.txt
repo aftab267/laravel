@@ -167,4 +167,18 @@ class sitecontroller extends Controller
      <option>{{$countryname}}</option>
      @endforeach
 </select>
+---------------
+forelse loop
+class sitecontroller extends Controller
+{
+   function home(){
+              $data=array('Bangladesh','India','China','Srilanka');      
+            return view ('homepage',['datakey'=>$data]);
+   }
+   }
+   @forelse($datakey as $countryname)
+   <li>{{$countryname}}</li>
+   @empty
+   <p>No Record Found</p>    
+   @endforelse
 
