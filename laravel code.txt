@@ -210,4 +210,11 @@ class sitecontroller extends Controller
 @break
 @endforeach
 -----------------------------------
-
+PHP in blade view
+@php    
+$x=10;
+$y=30;
+$result=$x+$y;
+echo $result;
+@endphp
+----------------------
