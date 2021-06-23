@@ -218,3 +218,6 @@ $result=$x+$y;
 echo $result;
 @endphp
 ----------------------
+subview
+@include('subview.menu');
+
