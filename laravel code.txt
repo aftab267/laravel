@@ -220,4 +220,5 @@ echo $result;
 ----------------------
 subview
 @include('subview.menu');
+@include('subview.fotter');
 
