@@ -227,7 +227,21 @@ Subview data pass
 in fotter
 <h2>{{$footetext}}</h2>
 ====================================
+Migration
+php artisan make:migration studentsmigration
 
+Table created
+public function up()
+    {
+        Schema::create('students',function(Blueprint $table){
+            $table->bigIncrements('id');
+            $table->string('name');             
+            $table->string('roll'); 
+            $table->string('class'); 
+            $table->timestamps(); 
+        }); 
+    }
+php artisan migrate
 
 
 
