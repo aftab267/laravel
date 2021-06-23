@@ -221,4 +221,32 @@ echo $result;
 subview
 @include('subview.menu');
 @include('subview.fotter');
+----------------------------------------------
+Subview data pass
+@include('subview.footer',['footetext'=>'All Right reverved by Kazi Aftabur Rahman']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
