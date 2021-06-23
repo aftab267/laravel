@@ -224,6 +224,9 @@ subview
 ----------------------------------------------
 Subview data pass
 @include('subview.footer',['footetext'=>'All Right reverved by Kazi Aftabur Rahman']);
+in fotter
+<h2>{{$footetext}}</h2>
+====================================
 
 
 
