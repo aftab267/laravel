@@ -223,6 +223,15 @@ Master Layout
 @section('buttonname','submit now')
 @yield('buttonname')
 
+------
+BODY PART
+@section('content')  
+body
+@endsection
+
+@yield('content')
+
+
 ================================
 Migration
 php artisan make:migration studentsmigration
