@@ -230,6 +230,9 @@ in fotter
 Master Layout
 @extends('layout.masterlayout')
 
+@section('titlekey','Home page')
+@yield('titlekey')
+
 ================================
 Migration
 php artisan make:migration studentsmigration
