@@ -227,6 +227,10 @@ Subview data pass
 in fotter
 <h2>{{$footetext}}</h2>
 ====================================
+Master Layout
+@extends('layout.masterlayout')
+
+================================
 Migration
 php artisan make:migration studentsmigration
 
