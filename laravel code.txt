@@ -233,6 +233,9 @@ Master Layout
 @section('titlekey','Home page')
 @yield('titlekey')
 
+@section('buttonname','submit now')
+@yield('buttonname')
+
 ================================
 Migration
 php artisan make:migration studentsmigration
