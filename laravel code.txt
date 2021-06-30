@@ -248,6 +248,16 @@ public function up()
         }); 
     }
 php artisan migrate
+-----------------------
+Querrybuilder
+use Illuminate\Support\Facades\DB;
+class retrievecontroller extends Controller
+{
+   function selectallrows(){
+      $results = DB::table('students')->get();
+       return $results;
+   }
+}
 
 
 
