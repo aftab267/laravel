@@ -274,6 +274,11 @@ function selectonecolumn (){
       $results=DB::table('students')->pluck('name');
       return json_encode($results);
    }
+   Select multi colume
+   function selectmulticolumn (){
+      $results=DB::table('students')->pluck('name','roll');
+      return json_encode($results);
+   }
 
 
 
