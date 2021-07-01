@@ -250,6 +250,7 @@ public function up()
 php artisan migrate
 -----------------------
 Querrybuilder
+select all rows
 use Illuminate\Support\Facades\DB;
 class retrievecontroller extends Controller
 {
@@ -258,6 +259,11 @@ class retrievecontroller extends Controller
        return $results;
    }
 }
+select one rows
+function selectonerows (){
+      $results=DB::table('students')->where('name','=','aftab')->first();
+      return json_encode($results);
+   }
 
 
 
