@@ -269,8 +269,11 @@ function findrows (){
       $results=DB::table('students')->find(3);
       return json_encode($results);
    }
-
-
+Find colume
+function selectonecolumn (){
+      $results=DB::table('students')->pluck('name');
+      return json_encode($results);
+   }
 
 
 
