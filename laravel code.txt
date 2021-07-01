@@ -279,8 +279,11 @@ function selectonecolumn (){
       $results=DB::table('students')->pluck('name','roll');
       return json_encode($results);
    }
-
-
+   specific data
+function specificdata (){
+      $results=DB::table('students')->where('id','=','4')->value('name');
+      return json_encode($results);
+   }
 
 
 
