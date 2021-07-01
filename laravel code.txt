@@ -284,7 +284,12 @@ function specificdata (){
       $results=DB::table('students')->where('id','=','4')->value('name');
       return json_encode($results);
    }
-
+{
+Aggregate
+   function countrows(){
+       $results=DB::table('students')->count();
+       return $results;
+   }
 
 
 
