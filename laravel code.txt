@@ -264,8 +264,11 @@ function selectonerows (){
       $results=DB::table('students')->where('name','=','aftab')->first();
       return json_encode($results);
    }
-
-
+find rows
+function findrows (){
+      $results=DB::table('students')->find(3);
+      return json_encode($results);
+   }
 
 
 
