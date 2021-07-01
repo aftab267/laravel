@@ -290,6 +290,18 @@ Aggregate
        $results=DB::table('students')->count();
        return $results;
    }
+   function maxrows(){
+    $results=DB::table('students')->max('id');
+    return $results;
+}
+function minrows(){
+    $results=DB::table('students')->min('id');
+    return $results;
+}
+function avgrows(){
+    $results=DB::table('students')->avg('id');
+    return $results;
+}
 
 
 
