@@ -307,14 +307,14 @@ function avgrows(){
 Model
 php artisan make:model studentsmodel
 class studentsmodel extends Model
+class studentsmodel extends Model
 {
-    protected $table='students';
-    protected $primarykey='id';
-    protected $incrementing='true';
-    protected  $keytype='int';
-    protected $timestamps=false;
+    public $table='students';
+    public $primarykey='id';
+    public $incrementing='true';
+    public  $keytype='int';
+    public $timestamps=false;
 }
-
 
 
 
