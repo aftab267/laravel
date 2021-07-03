@@ -317,6 +317,15 @@ class studentsmodel extends Model
     public  $keytype='int';
     public $timestamps=false;
 }
+data select
+use App\Models\studentsmodel;
+
+class studentcontroller extends Controller
+{
+    function allselect(){
+        $result=studentsmodel::all();
+        return $result;
+    }
 
 
 
