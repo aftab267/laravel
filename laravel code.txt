@@ -326,6 +326,10 @@ class studentcontroller extends Controller
         $result=studentsmodel::all();
         return $result;
     }
+    function allselect(){
+        $result=studentsmodel::get();
+        return $result;
+    }
 
 
 
